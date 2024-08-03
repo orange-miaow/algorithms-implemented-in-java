@@ -2,7 +2,7 @@ package org.example.others;
 
 public class FindMax {
 
-    public static int find(int[] array) {
+    public static int findIndex(int[] array) {
         int maxIndex = 0;
         int max = array[0];
 
@@ -14,6 +14,10 @@ public class FindMax {
         }
 
         return maxIndex;
+    }
+
+    public static int findValue(int[] array) {
+        return array[findIndex(array)];
     }
 
 }

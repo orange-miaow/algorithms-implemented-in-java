@@ -15,9 +15,9 @@ class FindMaxTest {
         System.out.println(Arrays.toString(array));
 
         System.out.println("the max index");
-        int maxIndex = FindMax.find(array);
+        int maxIndex = FindMax.findIndex(array);
         System.out.println(maxIndex);
         System.out.println("the max value");
-        System.out.println(array[maxIndex]);
+        System.out.println(FindMax.findValue(array));
     }
 }
