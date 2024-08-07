@@ -7,5 +7,6 @@ Algorithms Implemented In Java
 | divide-and-conquer  | FindKthSmallest                    |
 | dynamic programming | MultiSourceMultiTargetShortestPath |
 | dynamic programming | MatrixChain                        |
+| dynamic programming | Investment                         |
 
 
