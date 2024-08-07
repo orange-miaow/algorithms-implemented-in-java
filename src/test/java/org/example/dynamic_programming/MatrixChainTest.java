@@ -9,5 +9,6 @@ class MatrixChainTest {
     @Test
     void recursive() {
         MatrixChain.recursive(vectorP, 1, 5);
+        MatrixChain.iterative(vectorP);
     }
 }
