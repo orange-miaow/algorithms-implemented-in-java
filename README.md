@@ -8,5 +8,7 @@ Algorithms Implemented In Java
 | dynamic programming | MultiSourceMultiTargetShortestPath |
 | dynamic programming | MatrixChain                        |
 | dynamic programming | Investment                         |
+| dynamic programming | Knapsack                           |
+
 
 
