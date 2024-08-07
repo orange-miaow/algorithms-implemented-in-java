@@ -36,8 +36,8 @@ public class MatrixChain {
                 m[i][j] = m[i][i] + m[i + 1][j] + vectorP[i - 1] * vectorP[i] * vectorP[j];
                 s[i][j] = i;
 
-                for (int k = i +1; k < j; k++) { // (Ai * Ai+1 * ... * Ak) * (Ak+1 * Ak+2 * ... * Aj)
-                    int mIKJ = m[i][k] + m[k+1][j] + vectorP[i - 1] * vectorP[k] * vectorP[j];
+                for (int k = i + 1; k < j; k++) { // (Ai * Ai+1 * ... * Ak) * (Ak+1 * Ak+2 * ... * Aj)
+                    int mIKJ = m[i][k] + m[k + 1][j] + vectorP[i - 1] * vectorP[k] * vectorP[j];
                     if (mIKJ < m[i][j]) {
                         m[i][j] = mIKJ;
                         s[i][j] = k;
@@ -51,6 +51,43 @@ public class MatrixChain {
         System.out.println("----------");
 
         return m[1][n];
+    }
+
+    /**
+     * 加括号
+     *
+     * @param matrixBrackets [矩阵][0] 存放 本矩阵左边的括号
+     *                       [矩阵][1] 存放 本矩阵右边的括号
+     * @param s
+     * @param i
+     * @param j
+     */
+    public static void bracket(String[][] matrixBrackets, int[][] s, int i, int j) {
+        int k = s[i][j];
+
+        if (k != i) {
+            matrixBrackets[i][0] += "(";
+            matrixBrackets[k][1] += ")";
+            bracket(matrixBrackets, s, i, k);
+        }
+
+        if (k + 1 != j) {
+            matrixBrackets[k + 1][0] += "(";
+            matrixBrackets[j][1] += ")";
+            bracket(matrixBrackets, s, k + 1, j);
+        }
+    }
+
+    // 生成加过括号的表达式
+    public static String express(String[][] matrixBrackets) {
+        StringBuilder expression = new StringBuilder();
+        for (int t = 1; t < matrixBrackets.length; t++) {
+            expression.append(matrixBrackets[t][0]);
+            expression.append("A" + t);
+            expression.append(matrixBrackets[t][1]);
+        }
+
+        return expression.toString();
     }
 
 }
