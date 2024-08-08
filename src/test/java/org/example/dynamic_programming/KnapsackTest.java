@@ -23,10 +23,21 @@ class KnapsackTest {
         }
 
     }
+    int[][] i = new int[n + 1][b + 1];
+    {
+        for (int j = 1; j < i[0].length; j++) {
+            i[1][j] = (j / w[1] == 0 ? 0 : 1);
+        }
+    }
+
 
     @Test
     void iterative() {
-        Knapsack.iterative(n, b, w, v, F);
+        Knapsack.iterative(n, b, w, v, F, i);
         System.out.printf("F[%s][%s]=%s\n", n, b, F[n][b]);
+        System.out.printf("i[%s][%s]=%s\n", n, b, i[n][b]);
+
+        Knapsack.retrospect(n, b, w, i);
+
     }
 }
