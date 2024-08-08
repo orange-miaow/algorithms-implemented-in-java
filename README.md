@@ -9,6 +9,7 @@ Algorithms Implemented In Java
 | dynamic programming | MatrixChain                        |
 | dynamic programming | Investment                         |
 | dynamic programming | Knapsack                           |
+| dynamic programming | LCS                                |
 
 
 
