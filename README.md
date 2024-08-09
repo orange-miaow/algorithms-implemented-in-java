@@ -10,6 +10,7 @@ Algorithms Implemented In Java
 | dynamic programming | Investment                         |
 | dynamic programming | Knapsack                           |
 | dynamic programming | LCS                                |
+| dynamic programming | ImageCompression                   |
 
 
 
