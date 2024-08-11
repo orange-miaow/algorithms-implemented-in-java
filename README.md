@@ -13,6 +13,7 @@ Algorithms Implemented In Java
 | dynamic programming | LCS                                |
 | dynamic programming | ImageCompression                   |
 | dynamic programming | MaxSubSum                          |
+| dynamic programming | OptimalBinarySearchTree            |
 
 
 
