@@ -12,6 +12,7 @@ Algorithms Implemented In Java
 | dynamic programming | Knapsack                           |
 | dynamic programming | LCS                                |
 | dynamic programming | ImageCompression                   |
+| dynamic programming | MaxSubSum                          |
 
 
 
