@@ -40,6 +40,32 @@ public class RNASecondaryStructurePrediction {
         }
     }
 
+    // 追溯
+    public static void retrospect(int[][] s, int[] paired, int i, int j) {
+        if (j - i < 4) {
+            return;
+        }
+
+        int k = s[i][j];
+
+        if (k == -1) { // j不参与配对
+            paired[j] = -1;
+
+            retrospect(s, paired, i, j - 1);
+        } else if (k == i) { // j与k配对 k == i
+            paired[k] = j;
+            paired[j] = k;
+
+            retrospect(s, paired, k + 1, j - 1);
+        } else { // j与k配对 k != =i
+            paired[k] = j;
+            paired[j] = k;
+
+            retrospect(s, paired, i, k - 1);
+            retrospect(s, paired, k + 1, j - 1);
+        }
+    }
+
     /// 判断是否配对
     private static boolean paired(int x, int y) {
         if (x == 'U' && y == 'A') {
