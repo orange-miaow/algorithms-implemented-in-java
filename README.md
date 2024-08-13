@@ -15,6 +15,7 @@ Algorithms Implemented In Java
 | dynamic programming | MaxSubSum                          |
 | dynamic programming | OptimalBinarySearchTree            |
 | dynamic programming | RNASecondaryStructurePrediction    |
+| dynamic programming | LevenshteinDistance                |
 
 
 
