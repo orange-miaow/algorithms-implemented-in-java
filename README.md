@@ -16,6 +16,7 @@ Algorithms Implemented In Java
 | dynamic programming | OptimalBinarySearchTree            |
 | dynamic programming | RNASecondaryStructurePrediction    |
 | dynamic programming | LevenshteinDistance                |
+| dynamic programming | SequenceAlignment                  |
 
 
 
