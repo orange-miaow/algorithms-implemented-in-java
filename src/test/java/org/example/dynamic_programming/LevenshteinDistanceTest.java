@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 class LevenshteinDistanceTest {
 
-//    String[] S1 = new String[]{"", "h", "o", "r", "s", "e"};
-//    String[] S2 = new String[]{"", "r", "o", "s"};
+//    String[] S1 = new String[]{null, "h", "o", "r", "s", "e"};
+//    String[] S2 = new String[]{null, "r", "o", "s"};
 
-    String[] S1 = new String[]{"", "v", "i", "n", "t", "n", "e", "r"};
-    String[] S2 = new String[]{"", "w", "r", "i", "t", "e", "r", "s"};
+    String[] S1 = new String[]{null, "v", "i", "n", "t", "n", "e", "r"};
+    String[] S2 = new String[]{null, "w", "r", "i", "t", "e", "r", "s"};
 
     int[][] C = new int[S1.length][S2.length];
     {

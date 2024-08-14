@@ -55,7 +55,7 @@ public class LevenshteinDistance {
         List<String> sequence1 = new ArrayList<>(S1.length);
         sequence1.addAll(Arrays.asList(S1));
 
-        while (j + i != 0) {
+        while (i >=1 && j >= 1 ) {
             String mark = s[i][j];
             if ("↖".equals(mark)) {
                 i--;
@@ -83,6 +83,22 @@ public class LevenshteinDistance {
                 System.out.printf("S1=%s\n", sequence1);
 
                 j--;
+            }
+        }
+
+        if (i == 0) {
+            while (j >= 1) {
+                sequence1.add(1, S2[j]);
+                System.out.printf("在 S1首元素前添加S2[%s]=%s\n", j, S2[j]);
+                System.out.printf("S1=%s\n", sequence1);
+                j--;
+            }
+        } else {
+            while (i >= 1) {
+                sequence1.remove(i);
+                System.out.printf("删除 S1[%s]=%s\n", i, S1[i]);
+                System.out.printf("S1=%s\n", sequence1);
+                i--;
             }
         }
 
