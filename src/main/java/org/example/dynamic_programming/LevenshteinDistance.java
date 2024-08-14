@@ -16,7 +16,8 @@ public class LevenshteinDistance {
      * 备忘录
      * [i][j] 存放 S1[1..i]与S2[1..j]的编辑距离
      * @param s
-     * [i][j] 存放 S1[1..i]与S2[1..j]的编辑距离子问题的划分
+     * 标记函数
+     * [i][j] 存放 S1[1..i]与S2[1..j]的子问题的划分方向
      * y,x →
      * ↓
      */
@@ -32,19 +33,21 @@ public class LevenshteinDistance {
                 } else {
                     C[i][j] = 1 + C[i - 1][j - 1]; // 替换S1[i]为S2[j]
                     s[i][j] = "x";
+                }
 
-                    if (1 + C[i - 1][j] < C[i][j]) { // 删除S1[i]
-                        C[i][j] = 1 + C[i - 1][j];
-                        s[i][j] = "←";
-                    } else if (1 + C[i][j - 1] < C[i][j]) { // 在S1[i]后添加S2[j]
-                        C[i][j] = 1 + C[i][j - 1];
-                        s[i][j] = "↑";
-                    }
+                if (1 + C[i - 1][j] < C[i][j]) { // 删除S1[i]
+                    C[i][j] = 1 + C[i - 1][j];
+                    s[i][j] = "←";
+                }
+                if (1 + C[i][j - 1] < C[i][j]) { // 在S1[i]后添加S2[j]
+                    C[i][j] = 1 + C[i][j - 1];
+                    s[i][j] = "↑";
                 }
             }
         }
     }
 
+    // 追溯
     public static void retrospect(String[] S1, String[] S2, String[][] s) {
         int i = S1.length - 1;
         int j = S2.length - 1;
