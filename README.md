@@ -18,6 +18,7 @@ Algorithms Implemented In Java
 | dynamic programming | LevenshteinDistance                |
 | dynamic programming | SequenceAlignment                  |
 | greedy approach     | ActivitySelection                  |
+| greedy approach     | Loading                            |
 
 
 
