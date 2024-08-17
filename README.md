@@ -19,6 +19,7 @@ Algorithms Implemented In Java
 | dynamic programming | SequenceAlignment                  |
 | greedy approach     | ActivitySelection                  |
 | greedy approach     | Loading                            |
+| greedy approach     | Schedule                           |
 
 
 
