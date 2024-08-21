@@ -20,6 +20,7 @@ Algorithms Implemented In Java
 | greedy approach     | ActivitySelection                  |
 | greedy approach     | Loading                            |
 | greedy approach     | Schedule                           |
+| greedy approach     | Huffman                            |
 
 
 
