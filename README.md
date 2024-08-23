@@ -22,6 +22,7 @@ Algorithms Implemented In Java
 | greedy approach     | Schedule                           |
 | greedy approach     | Huffman                            |
 | greedy approach     | Prim                               |
+| greedy approach     | Kruskal                            |
 
 
 
