@@ -1,7 +1,11 @@
 Algorithms Implemented In Java
 ---
 
-| Strategies          | instances                          |
+对屈婉玲等教授所著《算法设计与分析》（第3版）的部分实例的Java实现
+
+This is a Java implementation of some examples of Algorithm Design and Analysis (3rd Edition) by Professor Qu Wanling et al
+
+| Strategies          | Instances                          |
 |---------------------|------------------------------------|
 | divide-and-conquer  | QuickSort                          |
 | divide-and-conquer  | FindKthSmallest                    |
