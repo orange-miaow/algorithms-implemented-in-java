@@ -23,6 +23,7 @@ Algorithms Implemented In Java
 | greedy approach     | Huffman                            |
 | greedy approach     | Prim                               |
 | greedy approach     | Kruskal                            |
+| greedy approach     | Dijkstra                           |
 
 
 
