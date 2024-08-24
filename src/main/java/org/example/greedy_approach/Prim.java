@@ -6,6 +6,8 @@ import java.util.List;
 public class Prim {
 
     /**
+     * 连通图G=<V, E, W>的最小生成树
+     *
      * @param n 顶点个数
      * @param w [i][j] 第i个顶点到第j个顶点的边 的 权值数组 (i到j的边可能有多条)
      */
