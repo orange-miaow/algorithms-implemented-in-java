@@ -28,6 +28,7 @@ This is a Java implementation of some examples of Algorithm Design and Analysis 
 | greedy approach     | Prim                               |
 | greedy approach     | Kruskal                            |
 | greedy approach     | Dijkstra                           |
+| backtracking        | NQueens                            |
 
 
 
