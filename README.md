@@ -32,6 +32,7 @@ al
 | greedy approach     | Dijkstra                           |
 | backtracking        | NQueens                            |
 | backtracking        | ZeroOneKnapsack                    |
+| backtracking        | TSP                                |
 
 
 
