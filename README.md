@@ -3,7 +3,8 @@ Algorithms Implemented In Java
 
 对屈婉玲等教授所著《算法设计与分析》（第3版）的部分实例的Java实现
 
-This is a Java implementation of some examples of Algorithm Design and Analysis (3rd Edition) by Professor Qu Wanling et al
+This is a Java implementation of some examples of Algorithm Design and Analysis (3rd Edition) by Professor Qu Wanling et
+al
 
 | Strategies          | Instances                          |
 |---------------------|------------------------------------|
@@ -29,6 +30,7 @@ This is a Java implementation of some examples of Algorithm Design and Analysis 
 | greedy approach     | Kruskal                            |
 | greedy approach     | Dijkstra                           |
 | backtracking        | NQueens                            |
+| backtracking        | ZeroOneKnapsack                    |
 
 
 
