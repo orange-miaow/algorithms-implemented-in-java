@@ -15,6 +15,7 @@ al
 | dynamic programming | MatrixChain                        |
 | dynamic programming | Investment                         |
 | dynamic programming | Knapsack                           |
+| dynamic programming | ZeroOneKnapsack                    |
 | dynamic programming | LCS                                |
 | dynamic programming | ImageCompression                   |
 | dynamic programming | MaxSubSum                          |
