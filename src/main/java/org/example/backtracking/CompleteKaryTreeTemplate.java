@@ -8,11 +8,14 @@ public abstract class CompleteKaryTreeTemplate {
 
     // 内节点的分叉数
     private final int k;
+    // 树的高度
+    private final int n;
     // 可行解向量列表
     private final List<int[]> possibleSolutionVectors = new ArrayList<>();
 
-    public CompleteKaryTreeTemplate(int k) {
+    public CompleteKaryTreeTemplate(int k, int n) {
         this.k = k;
+        this.n = n;
     }
 
     public List<int[]> getPossibleSolutionVectors() {
@@ -26,7 +29,7 @@ public abstract class CompleteKaryTreeTemplate {
      * @param vector 根节点至当前结点的向量
      */
     public void searchPossibleSolutions(int level, int[] vector) {
-        if (level == k) {
+        if (level == n) {
             // 此时已遍历到叶结点 且 根节点至该结点的向量为可行解向量
             possibleSolutionVectors.add(vector.clone());
             return;

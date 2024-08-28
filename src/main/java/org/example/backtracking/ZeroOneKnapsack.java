@@ -10,9 +10,9 @@ public class ZeroOneKnapsack extends CompleteKaryTreeTemplate {
     // [i] 物品i的重量
     private int[] w;
 
-    public ZeroOneKnapsack(int k, int B, int[] w) {
-        super(k);
-        this.B = B;
+    public ZeroOneKnapsack(int n, int b, int[] w) {
+        super(2, n);
+        B = b;
         this.w = w;
     }
 

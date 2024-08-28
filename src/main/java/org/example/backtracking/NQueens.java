@@ -2,8 +2,8 @@ package org.example.backtracking;
 
 public class NQueens extends CompleteKaryTreeTemplate {
 
-    public NQueens(int k) {
-        super(k);
+    public NQueens(int n) {
+        super(n, n);
     }
 
     @Override
