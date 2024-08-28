@@ -34,6 +34,7 @@ al
 | backtracking        | ZeroOneKnapsack                    |
 | backtracking        | TSP                                |
 | backtracking        | Loading                            |
+| backtracking        | GraphColoring                      |
 
 
 
