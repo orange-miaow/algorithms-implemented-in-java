@@ -33,6 +33,7 @@ al
 | backtracking        | NQueens                            |
 | backtracking        | ZeroOneKnapsack                    |
 | backtracking        | TSP                                |
+| backtracking        | Loading                            |
 
 
 
