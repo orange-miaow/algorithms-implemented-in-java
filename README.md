@@ -35,6 +35,7 @@ al
 | backtracking        | TSP                                |
 | backtracking        | Loading                            |
 | backtracking        | GraphColoring                      |
+| branch-and-bound    | Knapsack                           |
 
 
 
