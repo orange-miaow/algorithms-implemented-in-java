@@ -36,6 +36,8 @@ al
 | backtracking        | Loading                            |
 | backtracking        | GraphColoring                      |
 | branch-and-bound    | Knapsack                           |
+| branch-and-bound    | MaximumClique                      |
+
 
 
 
