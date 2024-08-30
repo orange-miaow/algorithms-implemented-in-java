@@ -55,7 +55,7 @@ public class Knapsack {
     /**
      * 在搜索树中搜寻最优解
      *
-     * @param level  层级 level=0,1,2,...,k-1
+     * @param level  层级 level=0,1,2,...,n-1
      * @param vector 根结点至当前结点的向量
      */
     public void searchOptimalSolution(int level, int[] vector) {
