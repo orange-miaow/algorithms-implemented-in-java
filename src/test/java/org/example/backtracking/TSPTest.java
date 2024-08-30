@@ -28,8 +28,6 @@ class TSPTest {
                 }
             }
         }
-
-        System.out.printf("");
     }
 
     @Test
@@ -47,7 +45,7 @@ class TSPTest {
         int[] optimalSolution = TSP.getOptimalSolution(w, possibleSolutionVectors);
         System.out.printf("最优解向量: %s\n", Arrays.toString(optimalSolution));
 
-        System.out.printf("最优路径: 0->");
+        System.out.printf("最优回路: 0->");
         for (int i : optimalSolution) {
             System.out.printf("%s->", (i + 1));
         }
