@@ -33,8 +33,9 @@ public class CyclicPermutation {
     /**
      * 在搜索树中搜寻最优解
      *
-     * @param level  层级 level=0,1,2,...,n
-     * @param vector 根结点至当前结点的向量
+     * @param level      层级 level=0,1,...,n-1
+     * @param vector     根结点至当前结点的向量
+     * @param lastCycleX 第level-1个位置所放的圆的圆心横坐标
      */
     public void searchOptimalSolution(int level, int[] vector, double lastCycleX) {
         // 访问状态数组
