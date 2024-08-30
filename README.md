@@ -38,6 +38,7 @@ al
 | branch-and-bound    | Knapsack                           |
 | branch-and-bound    | MaximumClique                      |
 | branch-and-bound    | TSP                                |
+| branch-and-bound    | CyclicPermutation                  |
 
 
 
