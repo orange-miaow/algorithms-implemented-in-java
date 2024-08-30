@@ -25,7 +25,7 @@ public abstract class CompleteKaryTreeTemplate {
     /**
      * 在完全K叉树中搜寻可行解
      *
-     * @param level  层级 level=0,1,2,...,k-1
+     * @param level  层级 level=0,1,2,...,n-1
      * @param vector 根节点至当前结点的向量
      */
     public void searchPossibleSolutions(int level, int[] vector) {
