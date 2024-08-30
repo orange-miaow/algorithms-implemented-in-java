@@ -22,7 +22,6 @@ class TSPTest {
                 if (w[i][j] > 0) {
                     w[j][i] = w[i][j];
                 } else {
-                    System.out.println("-------------------------");
                     w[i][j] = -1;
                     w[j][i] = -1;
                 }
