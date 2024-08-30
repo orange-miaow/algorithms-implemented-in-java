@@ -37,6 +37,7 @@ al
 | backtracking        | GraphColoring                      |
 | branch-and-bound    | Knapsack                           |
 | branch-and-bound    | MaximumClique                      |
+| branch-and-bound    | TSP                                |
 
 
 
