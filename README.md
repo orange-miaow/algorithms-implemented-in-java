@@ -36,6 +36,7 @@ al
 | backtracking        | TSP                                |
 | backtracking        | Loading                            |
 | backtracking        | GraphColoring                      |
+| backtracking        | ContinuousPostageStamp             |
 | branch-and-bound    | Knapsack                           |
 | branch-and-bound    | MaximumClique                      |
 | branch-and-bound    | TSP                                |
