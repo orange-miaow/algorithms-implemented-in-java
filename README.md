@@ -23,6 +23,7 @@ al
 | dynamic programming | RNASecondaryStructurePrediction    |
 | dynamic programming | LevenshteinDistance                |
 | dynamic programming | SequenceAlignment                  |
+| dynamic programming | MinStampNum                        |
 | greedy approach     | ActivitySelection                  |
 | greedy approach     | Loading                            |
 | greedy approach     | Schedule                           |
