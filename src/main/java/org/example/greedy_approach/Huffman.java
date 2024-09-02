@@ -7,10 +7,9 @@ public class Huffman {
 
     /**
      * 构造一棵Huffman树
-     * @param n
-     * 字符集C={x1,x2,...,xn}的字符个数
-     * @param f
-     * [i] 字符i的频率
+     *
+     * @param n 字符集C={x1,x2,...,xn}的字符个数
+     * @param f [i] 字符i的频率
      */
     public static Node binaryTree(int n, float[] f) {
         // 按频率递增构成队列Q
@@ -51,11 +50,11 @@ public class Huffman {
             Q.add(j, z);
         }
 
-        Node root = Q.get(0); // 根节点
+        Node root = Q.get(0); // 根结点
         return root;
     }
 
-    // Huffman二元前缀码编码 同时提取出叶子节点
+    // Huffman二元前缀码编码 同时提取出叶子结点
     // 使用 先根遍历
     public static void encode(Node node, String bits, List<Node> leaves) {
         if (null == node) {
@@ -67,7 +66,7 @@ public class Huffman {
         encode(node.left, node.code + "0", leaves);
         encode(node.right, node.code + "1", leaves);
 
-        // 提取叶子节点
+        // 提取叶子结点
         if ((null == node.left) && (null == node.right)) {
             leaves.add(node);
         }

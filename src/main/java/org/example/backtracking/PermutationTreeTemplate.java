@@ -23,11 +23,11 @@ public abstract class PermutationTreeTemplate {
      * 在排列树中搜寻可行解
      *
      * @param level  层级 level=0,1,2,...,n-1
-     * @param vector 根节点至当前结点的向量
+     * @param vector 根结点至当前结点的向量
      */
     public void searchPossibleSolutions(int level, int[] vector) {
         if (level == n) {
-            // 此时已遍历到叶结点 且 根节点至该结点的向量为可行解向量
+            // 此时已遍历到叶结点 且 根结点至该结点的向量为可行解向量
             possibleSolutionVectors.add(vector.clone());
             return;
         }
@@ -47,7 +47,7 @@ public abstract class PermutationTreeTemplate {
         }
 
         for (Integer e : availableElements) {
-            // 判断 根节点至该结点的向量 是否 为部分可行解向量
+            // 判断 根结点至该结点的向量 是否 为部分可行解向量
             vector[level] = e;
             if (whetherTheConstraintConditionsAreMet(level, vector)) {
                 // 如果满足约束条件 即为部分可行解 则根据深度优先策略(DFS)遍历该结点的下一个结点
@@ -60,7 +60,7 @@ public abstract class PermutationTreeTemplate {
 
     }
 
-    // 判断 根节点至当前结点的向量 是否 满足约束条件
+    // 判断 根结点至当前结点的向量 是否 满足约束条件
     abstract boolean whetherTheConstraintConditionsAreMet(int level, int[] vector);
 
 }

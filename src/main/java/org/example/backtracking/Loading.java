@@ -67,7 +67,7 @@ public class Loading {
             args.level--;
 
             while ((args.level > 0) && (x[args.level] == 0)) {
-                // 回溯到父节点
+                // 回溯到父结点
                 args.level--;
             }
 

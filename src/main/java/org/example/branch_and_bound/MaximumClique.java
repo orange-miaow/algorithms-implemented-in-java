@@ -91,7 +91,7 @@ public class MaximumClique {
                 // 对case1和case2 无需考虑第k个(最后一个)顶点是否在团中
                 k--;
                 while ((k > 0) && (vector[k] == 0)) {
-                    // 回溯到父节点
+                    // 回溯到父结点
                     k--;
                 }
 
