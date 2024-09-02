@@ -9,6 +9,7 @@ public class Kruskal {
 
     /**
      * 连通图G=<V, E, W>的最小生成树
+     *
      * @param n 顶点个数
      * @param w [i][j] 第i个顶点到第j个顶点的边 的 权值数组 (i到j的边可能有多条)
      */
@@ -35,7 +36,10 @@ public class Kruskal {
         // 初始化FIND和connectedSubsets 每个顶点单独形成一个连通子集
         for (int i = 1; i <= n; i++) {
             FIND[i] = i;
-            connectedSubsets.put(i, new ArrayList<>(List.of(i)));
+            int finalI = i;
+            connectedSubsets.put(i, new ArrayList<Integer>() {{
+                add(finalI);
+            }});
         }
 
         while (TEdges.size() < n - 1) {

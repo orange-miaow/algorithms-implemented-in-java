@@ -52,7 +52,7 @@ public class TSP {
         // 获取已访问顶点集中的最后一个顶点
         Integer lastVisitedVertex = vector[level - 1];
         // 未访问顶点集 不包括驻地城市顶点
-        LinkedHashSet<Integer> unvisitedVertexSet = new LinkedHashSet<>() {{
+        LinkedHashSet<Integer> unvisitedVertexSet = new LinkedHashSet<Integer>() {{
             for (int i = 1; i < n; i++) {
                 add(i);
             }
