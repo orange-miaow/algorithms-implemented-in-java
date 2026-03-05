@@ -11,6 +11,7 @@ al
 | divide-and-conquer  | QuickSort                          |
 | divide-and-conquer  | FindKthSmallest                    |
 | divide-and-conquer  | MaxSubSum                          |
+| divide-and-conquer  | MergeSort                          |
 | dynamic programming | MultiSourceMultiTargetShortestPath |
 | dynamic programming | MatrixChain                        |
 | dynamic programming | Investment                         |
