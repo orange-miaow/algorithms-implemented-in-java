@@ -15,6 +15,7 @@ class FindSecondLargestTest {
         System.out.println(Arrays.toString(array));
 
         System.out.println("the second largest value");
-        System.out.println(FindSecondLargest.findValue(array));
+        System.out.println(FindSecondLargest.findValueByTournament(array));
+        System.out.println(FindSecondLargest.findValueByGrouping(array));
     }
 }
